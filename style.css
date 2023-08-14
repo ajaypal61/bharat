@@ -1,22 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     /* background-color: aqua; */
     font-family: 'Josefin Sans', sans-serif;
 }
-header{
+
+header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(pic/pic14.jpg) ;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(pic/pic14.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-nav{
+nav {
     width: 100%;
     height: 15vh;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -24,26 +25,27 @@ nav{
     text-transform: uppercase;
 }
 
-nav .logo{
-width: 25%;
-/* background-color: red; */
-text-align: center;
+nav .logo {
+    width: 25%;
+    /* background-color: red; */
+    text-align: center;
 }
 
-nav .menu{
-     width: 40%;
-     /* background-color: rgb(228, 26, 60); */
-     display: flex;
-     justify-content: space-around;
+nav .menu {
+    width: 40%;
+    /* background-color: rgb(228, 26, 60); */
+    display: flex;
+    justify-content: space-around;
 }
-nav .menu a{
+
+nav .menu a {
     width: 20%;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-main{
+main {
     width: 100%;
     height: 85vh;
     /* background-color: yellowgreen; */
@@ -58,14 +60,14 @@ main{
 
 } */
 
-section h3{
+section h3 {
     font-size: 35px;
     font-weight: 900;
     letter-spacing: 3px;
     text-shadow: 1px 1px 2px black;
 }
 
-section h1{
+section h1 {
     margin: 25px 0 15px 0;
     font-size: 55px;
     font-weight: 900;
@@ -73,61 +75,80 @@ section h1{
     text-transform: uppercase;
 }
 
-section p{
+section p {
     font-size: 25px;
     word-spacing: 2px;
     margin-bottom: 25px;
     text-shadow: 1px 1px 1px black;
 }
 
-section a{
+section a {
     padding: 12px 30px;
     border-radius: 4px;
-   outline: none;
-   text-decoration: none;
-   text-transform: uppercase;
-   font-size: 13px;
-   font-weight: 700;
-   letter-spacing: 1px;
-   transition: all .5s ease;
+    outline: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all .5s ease;
 }
 
 
 
-section .btnone{
+section .btnone {
     background-color: #fff;
     color: #000;
 }
-.btnone:hover{
+
+.btnone:hover {
     background-color: #00b894;
     color: white;
 }
 
-section .btntwo{
+section .btntwo {
     background-color: #00b894;
     color: white;
 }
-.btntwo:hover{
+
+.btntwo:hover {
     background-color: #fff;
-    color: #000;  
+    color: #000;
 }
 
-.change_content::after{
+.change_content::after {
     content: '';
     animation: changetext 10s infinite linear;
     color: #00b894;
 }
 
-@keyframes changetext{
-    0%{content: "Darjeeling"}
-    20%{content: "Agra"}
-    40%{content: "Jaipur"}
-    60%{content: "Kerala"}
-    80%{content: "Delhi"}
-    100%{content: "Mumbai"}
+@keyframes changetext {
+    0% {
+        content: "Darjeeling"
+    }
+
+    20% {
+        content: "Agra"
+    }
+
+    40% {
+        content: "Jaipur"
+    }
+
+    60% {
+        content: "Kerala"
+    }
+
+    80% {
+        content: "Delhi"
+    }
+
+    100% {
+        content: "Mumbai"
+    }
 }
 
-.burger{
+.burger {
     display: none;
     position: absolute;
     cursor: pointer;
@@ -135,8 +156,8 @@ section .btntwo{
     top: 15px;
 }
 
-@media only screen and (max-width: 1000px){
-    .burger{
+@media only screen and (max-width: 1000px) {
+    .burger {
         display: block;
     }
 }
